@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F4F2DF; }
+  body * {
+    margin: 0;
+    padding: 0;
+    font-family: 'NeoSansArabic';
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  body .opacity {
+    background: rgba(59, 35, 19, 0.7); }
+  body button {
+    padding: 5px 15px;
+    font-size: 24px;
+    border: 1px solid #F4F2DF;
+    border-radius: 2px;
+    -webkit-transition: 1s all ease;
+    transition: 1s all ease;
+    outline: none; }
+  body .close {
+    cursor: pointer; }
+
+/* Start Modal */
+.modal {
+  background-color: rgba(59, 35, 19, 0.7); }
+  .modal .modal-body {
+    width: 400px;
+    background-color: #F4F2DF;
+    margin: 100px auto; }
+    .modal .modal-body .head h3 {
+      display: inline-block; }
+    .modal .modal-body .body {
+      margin-top: 30px;
+      overflow: hidden; }
+      .modal .modal-body .body .form-control {
+        border-radius: 2px;
+        margin-bottom: 20px;
+        background-color: #fff; }
+      .modal .modal-body .body button {
+        float: right;
+        background-color: #3B2313;
+        color: #F4F2DF;
+        font-size: 18px; }
+
+/* End Modal */
+/* Start Header */
+header {
+  background: url("../images/cover.jpg");
+  background-size: cover;
+  background-position: center center; }
+  header nav {
+    padding: 5px 0; }
+    header nav .logo {
+      display: inline-block; }
+      header nav .logo img {
+        width: 150px; }
+      header nav .logo span {
+        font-size: 36px;
+        color: #F4F2DF; }
+    header nav .menu {
+      display: inline-block;
+      float: right;
+      padding: 25px 0; }
+      header nav .menu button {
+        padding: 5px 15px;
+        font-size: 24px;
+        background: transparent;
+        border: 1px solid #F4F2DF;
+        color: #F4F2DF;
+        border-radius: 2px;
+        -webkit-transition: 1s all ease;
+        transition: 1s all ease;
+        margin-left: 10px; }
+        header nav .menu button:hover {
+          background-color: #F4F2DF;
+          color: #3B2313; }
+      header nav .menu a:first-child button {
+        background-color: #F4F2DF;
+        color: #3B2313; }
+  header .contain {
+    padding: 150px 0 180px;
+    color: #F4F2DF; }
+    header .contain h5 {
+      font-size: 36px; }
+    header .contain h2 {
+      font-size: 64px;
+      font-weight: bold; }
+    header .contain button {
+      margin-top: 20px;
+      background-color: #F4F2DF;
+      color: #3B2313; }
+
+/* End Header */
+/* Start Services */
+.services {
+  padding: 100px 0 60px; }
+  .services h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 50px; }
+  .services .cont {
+    text-align: center;
+    margin-bottom: 40px; }
+    .services .cont .circle {
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
+      margin: 0 auto;
+      border-radius: 50%;
+      background-color: #3B2313;
+      color: #F4F2DF;
+      font-size: 30px; }
+    .services .cont h3 {
+      font-size: 28px;
+      font-weight: bold;
+      margin: 20px 0 10px; }
+    .services .cont h5 {
+      font-size: 18px; }
+
+/* End Services */
+/* Start Footer */
+footer {
+  background: url("../images/footerCover.png");
+  background-size: contain;
+  color: #F4F2DF; }
+  footer .cover {
+    padding: 80px 0 0;
+    background-color: rgba(59, 35, 19, 0.95); }
+  footer h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 20px 0; }
+  footer h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0; }
+  footer p {
+    margin-bottom: 20px; }
+  footer button {
+    font-size: 18px; }
+  footer ul {
+    list-style: none; }
+    footer ul li {
+      display: inline-block; }
+      footer ul li a {
+        display: block;
+        width: 50px;
+        height: 50px;
+        line-height: 45px;
+        margin-right: 10px;
+        border-radius: 50%;
+        background-color: #3B2313;
+        border: 3px solid #A97251;
+        font-size: 30px;
+        text-align: center; }
+        footer ul li a i {
+          color: #F4F2DF;
+          font-size: 28px; }
+  footer .copyright {
+    margin-top: 100px;
+    background-color: #3B2313;
+    color: #F4F2DF;
+    padding: 10px 0;
+    text-align: center; }
+
+/* End Footer */
+@font-face {
+  font-family: 'NeoSansArabic';
+  src: url("../webfonts/NeoSansArabic.ttf") format("truetype"); }
+
+/*# sourceMappingURL=style.css.map */
