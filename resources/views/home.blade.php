@@ -28,12 +28,13 @@
                     </div>
                 </div>
                 <div class="body">
-                    <form>
+                    <form method="post" action="{{ route('login') }}">
+                        @csrf
                         <div>
-                            <input type="email" class="form-control" placeholder="{{ trans('website.email') }}">
+                            <input type="email" name="email" class="form-control" placeholder="{{ trans('website.email') }}">
                         </div>
                         <div>
-                            <input type="password" class="form-control" placeholder="{{ trans('website.password') }}">
+                            <input type="password" name="password" class="form-control" placeholder="{{ trans('website.password') }}">
                         </div>
                         <div>
                             <button type="submit">{{ trans('website.login') }}</button>

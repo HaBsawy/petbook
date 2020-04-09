@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F4F2DF; }
+  body * {
+    margin: 0;
+    padding: 0;
+    font-family: 'NeoSansArabic';
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  body .opacity {
+    background: rgba(59, 35, 19, 0.7); }
+  body button {
+    padding: 5px 15px;
+    font-size: 24px;
+    border: 1px solid #F4F2DF;
+    border-radius: 2px;
+    -webkit-transition: 1s all ease;
+    transition: 1s all ease;
+    outline: none; }
+  body .close {
+    cursor: pointer; }
+
+.nav {
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  margin-bottom: 50px; }
+  .nav .logo {
+    display: inline-block; }
+    .nav .logo img {
+      width: 100px; }
+  .nav .menu {
+    display: inline-block;
+    float: right; }
+    .nav .menu ul {
+      list-style: none; }
+      .nav .menu ul li {
+        display: inline-block;
+        margin-left: 20px; }
+        .nav .menu ul li a {
+          display: block;
+          font-size: 26px;
+          color: #3B2313; }
+          .nav .menu ul li a.profile-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+            -webkit-box-shadow: 0 0 2px #A97251;
+                    box-shadow: 0 0 2px #A97251;
+            margin-top: 15px;
+            margin-bottom: -6px; }
+            .nav .menu ul li a.profile-avatar img {
+              width: 100%; }
+
+.post {
+  border: 1px solid #ddd;
+  background: #fff;
+  margin-bottom: 50px; }
+  .post .head {
+    padding: 10px 20px; }
+    .post .head .user {
+      display: inline-block; }
+      .post .head .user a {
+        color: #3B2313;
+        font-weight: bold;
+        float: left; }
+        .post .head .user a span {
+          display: block;
+          margin: 8px 0; }
+      .post .head .user .profile-avatar {
+        display: inline-block;
+        font-size: 26px;
+        color: #3B2313;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+        -webkit-box-shadow: 0 0 2px #A97251;
+                box-shadow: 0 0 2px #A97251;
+        margin-right: 20px; }
+        .post .head .user .profile-avatar img {
+          width: 100%; }
+    .post .head .right {
+      display: inline-block;
+      float: right;
+      margin: 11px 0; }
+  .post .body .image img {
+    width: 100%; }
+  .post .body .stats {
+    padding: 10px 20px; }
+    .post .body .stats ul {
+      list-style: none; }
+      .post .body .stats ul li {
+        display: inline-block;
+        margin-right: 20px; }
+        .post .body .stats ul li a {
+          color: #3B2313;
+          font-size: 18px; }
+          .post .body .stats ul li a i {
+            font-size: 24px; }
+  .post .body .post-pragraph {
+    padding: 0 20px 10px; }
+    .post .body .post-pragraph a {
+      font-weight: bold;
+      margin-right: 10px;
+      font-size: 18px;
+      color: #3B2313; }
+  .post .body .write-comment {
+    border-top: 1px solid #eee;
+    position: relative; }
+    .post .body .write-comment input {
+      padding: 15px 100px 15px 20px;
+      width: 100%;
+      border: none; }
+    .post .body .write-comment button {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 9px 20px;
+      background: transparent;
+      border: none;
+      color: #aaa; }
+
+aside .user {
+  overflow: hidden;
+  margin-bottom: 30px; }
+  aside .user a {
+    color: #3B2313;
+    font-weight: bold;
+    float: left; }
+    aside .user a span {
+      display: block;
+      margin: 13px 0; }
+  aside .user .profile-avatar {
+    display: inline-block;
+    font-size: 26px;
+    color: #3B2313;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 2px #A97251;
+            box-shadow: 0 0 2px #A97251;
+    margin-right: 20px; }
+    aside .user .profile-avatar img {
+      width: 100%; }
+aside .pages {
+  margin-bottom: 30px; }
+  aside .pages ul {
+    list-style: none; }
+    aside .pages ul a {
+      color: #3B2313;
+      font-size: 18px; }
+      aside .pages ul a i {
+        margin-right: 10px; }
+aside .footer ul {
+  list-style: none;
+  color: #aaa; }
+  aside .footer ul li {
+    display: inline-block;
+    margin: 0 20px; }
+    aside .footer ul li:first-of-type {
+      margin-left: 0; }
+    aside .footer ul li:last-of-type {
+      margin-right: 0; }
+    aside .footer ul li a {
+      color: #aaa; }
+aside .footer .copyright {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #aaa; }
+
+@font-face {
+  font-family: 'NeoSansArabic';
+  src: url("../webfonts/NeoSansArabic.ttf") format("truetype"); }
+
+/*# sourceMappingURL=style_auth.css.map */
