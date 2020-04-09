@@ -14,7 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    if(auth()->check()) {
+        return view('home_auth');
+    } else {
+        return view('home');
+    }
 });
 
 Route::get('lang/{lang}', function ($lang) {

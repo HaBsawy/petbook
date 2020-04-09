@@ -52,18 +52,22 @@
                     </div>
                 </div>
                 <div class="body">
-                    <form>
+                    <form method="post" action="{{ route('register') }}">
+                        @csrf
                         <div>
-                            <input type="text" class="form-control" placeholder="{{ trans('website.username') }}">
+                            <input type="text" name="firstName" class="form-control" placeholder="{{ trans('website.firstName') }}">
                         </div>
                         <div>
-                            <input type="email" class="form-control" placeholder="{{ trans('website.email') }}">
+                            <input type="text" name="lastName" class="form-control" placeholder="{{ trans('website.lastName') }}">
                         </div>
                         <div>
-                            <input type="password" class="form-control" placeholder="{{ trans('website.password') }}">
+                            <input type="email" name="email" class="form-control" placeholder="{{ trans('website.email') }}">
                         </div>
                         <div>
-                            <input type="password" class="form-control" placeholder="{{ trans('website.password-conformation') }}">
+                            <input type="password" name="password" class="form-control" placeholder="{{ trans('website.password') }}">
+                        </div>
+                        <div>
+                            <input type="password" name="password-conformation" class="form-control" placeholder="{{ trans('website.password-conformation') }}">
                         </div>
                         <div>
                             <button type="submit">{{ trans('website.register') }}</button>
