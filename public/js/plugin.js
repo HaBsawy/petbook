@@ -12,4 +12,11 @@ $(document).ready(function () {
     $(".modal .close").click(function () {
         $(this).parents(".modal").fadeOut(100);
     });
+    
+    $(".post .like").click(function (e) {
+        e.preventDefault();
+        
+        $(this).toggleClass("red");
+        $(this).children("i").toggleClass("fas far");
+    });
 });

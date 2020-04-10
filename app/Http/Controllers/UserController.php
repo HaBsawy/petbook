@@ -11,9 +11,8 @@ class UserController extends Controller
 {
     public function login(Request $request)
     {
-        if(Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
-            return redirect()->back();
-        }
+        Auth::attempt(['email' => $request->email, 'password' => $request->password]);
+        return redirect()->back();
     }
 
     public function register(Request $request)
@@ -32,6 +31,12 @@ class UserController extends Controller
         $profile->user_id = $user->id;
         $profile->save();
 
+        return redirect()->back();
+    }
+
+    public function logout()
+    {
+        auth()->logout();
         return redirect()->back();
     }
 }

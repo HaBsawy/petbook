@@ -26,16 +26,29 @@ body {
         transition: 1s all ease;
         outline: none;
     }
+    
+    a:hover {
+        text-decoration: none
+    }
             
     .close {
         cursor: pointer
+    }
+    
+    .red {
+        color: #c00 !important;
     }
 }
 
 .nav {
     border-bottom: 1px solid #ddd;
     background-color: #fff;
-    margin-bottom: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    
     
     .logo {
         display: inline-block;
@@ -78,6 +91,10 @@ body {
             }
         }
     }
+}
+
+.content {
+    padding-top: 120px;
 }
 
 .post {
@@ -176,6 +193,7 @@ body {
                 padding: 15px 100px 15px 20px;
                 width: 100%;
                 border: none;
+                outline: 0;
             }
             
             button {
@@ -185,13 +203,18 @@ body {
                 padding: 9px 20px;
                 background: transparent;
                 border: none;
-                color: #aaa
+                color: #aaa;
+                outline: 0;
             }
         }
     }
 }
 
 aside {
+    position: fixed;
+    
+    background-color: #fff;
+    padding: 20px;
     
     .user {
         overflow: hidden;
@@ -231,40 +254,22 @@ aside {
         ul {
             list-style: none;
             
-            a {
-                color: $mainColor;
-                font-size: 18px;
-                
-                i {
-                    margin-right: 10px;
+            li {
+                margin: 10px 0;
+            
+                a {
+                    color: $mainColor;
+                    font-size: 16px;
+
+                    i {
+                        margin-right: 10px;
+                    }
                 }
             }
         }
     }
     
     .footer {
-        
-        ul {
-            list-style: none;
-            color: #aaa;
-            
-            li {
-                display: inline-block;
-                margin: 0 20px;
-                
-                &:first-of-type {
-                    margin-left: 0
-                }
-                
-                &:last-of-type {
-                    margin-right: 0;
-                }
-                
-                a {
-                    color: #aaa
-                }
-            }
-        }
         
         .copyright {
             margin-top: 20px;

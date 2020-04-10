@@ -18,13 +18,21 @@ body {
     -webkit-transition: 1s all ease;
     transition: 1s all ease;
     outline: none; }
+  body a:hover {
+    text-decoration: none; }
   body .close {
     cursor: pointer; }
+  body .red {
+    color: #c00 !important; }
 
 .nav {
   border-bottom: 1px solid #ddd;
   background-color: #fff;
-  margin-bottom: 50px; }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9; }
   .nav .logo {
     display: inline-block; }
     .nav .logo img {
@@ -52,6 +60,9 @@ body {
             margin-bottom: -6px; }
             .nav .menu ul li a.profile-avatar img {
               width: 100%; }
+
+.content {
+  padding-top: 120px; }
 
 .post {
   border: 1px solid #ddd;
@@ -112,7 +123,8 @@ body {
     .post .body .write-comment input {
       padding: 15px 100px 15px 20px;
       width: 100%;
-      border: none; }
+      border: none;
+      outline: 0; }
     .post .body .write-comment button {
       position: absolute;
       bottom: 0;
@@ -120,56 +132,51 @@ body {
       padding: 9px 20px;
       background: transparent;
       border: none;
-      color: #aaa; }
+      color: #aaa;
+      outline: 0; }
 
-aside .user {
-  overflow: hidden;
-  margin-bottom: 30px; }
-  aside .user a {
-    color: #3B2313;
-    font-weight: bold;
-    float: left; }
-    aside .user a span {
-      display: block;
-      margin: 13px 0; }
-  aside .user .profile-avatar {
-    display: inline-block;
-    font-size: 26px;
-    color: #3B2313;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+aside {
+  position: fixed;
+  background-color: #fff;
+  padding: 20px; }
+  aside .user {
     overflow: hidden;
-    -webkit-box-shadow: 0 0 2px #A97251;
-            box-shadow: 0 0 2px #A97251;
-    margin-right: 20px; }
-    aside .user .profile-avatar img {
-      width: 100%; }
-aside .pages {
-  margin-bottom: 30px; }
-  aside .pages ul {
-    list-style: none; }
-    aside .pages ul a {
+    margin-bottom: 30px; }
+    aside .user a {
       color: #3B2313;
-      font-size: 18px; }
-      aside .pages ul a i {
-        margin-right: 10px; }
-aside .footer ul {
-  list-style: none;
-  color: #aaa; }
-  aside .footer ul li {
-    display: inline-block;
-    margin: 0 20px; }
-    aside .footer ul li:first-of-type {
-      margin-left: 0; }
-    aside .footer ul li:last-of-type {
-      margin-right: 0; }
-    aside .footer ul li a {
-      color: #aaa; }
-aside .footer .copyright {
-  margin-top: 20px;
-  font-size: 12px;
-  color: #aaa; }
+      font-weight: bold;
+      float: left; }
+      aside .user a span {
+        display: block;
+        margin: 13px 0; }
+    aside .user .profile-avatar {
+      display: inline-block;
+      font-size: 26px;
+      color: #3B2313;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+      -webkit-box-shadow: 0 0 2px #A97251;
+              box-shadow: 0 0 2px #A97251;
+      margin-right: 20px; }
+      aside .user .profile-avatar img {
+        width: 100%; }
+  aside .pages {
+    margin-bottom: 30px; }
+    aside .pages ul {
+      list-style: none; }
+      aside .pages ul li {
+        margin: 10px 0; }
+        aside .pages ul li a {
+          color: #3B2313;
+          font-size: 16px; }
+          aside .pages ul li a i {
+            margin-right: 10px; }
+  aside .footer .copyright {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #aaa; }
 
 @font-face {
   font-family: 'NeoSansArabic';

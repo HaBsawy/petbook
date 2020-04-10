@@ -28,6 +28,10 @@ Route::get('lang/{lang}', function ($lang) {
     return redirect()->back();
 })->middleware('locale')->name('lang');
 
+Route::group(['middleware' => 'auth'], function () {
+    Route::post('logout', 'UserController@logout')->name('logout');
+});
+
 Route::group(['middleware' => 'guest'], function () {
     Route::post('login', 'UserController@login')->name('login');
     Route::post('register', 'UserController@register')->name('register');

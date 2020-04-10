@@ -59,7 +59,7 @@
                         <div class="stats">
                             <ul>
                                 <li>
-                                    <a href="#">342 <i class="far fa-heart"></i></a>
+                                    <a href="/like" class="like">342 <i class="far fa-heart"></i></a>
                                 </li>
                                 <li>
                                     <a href="#">65 <i class="far fa-comment"></i></a>
@@ -84,7 +84,7 @@
                     <aside>
                         <div class="user">
                             <a class="profile-avatar" href="#"><img src="{{ url('images/profileAvatar.png') }}" alt="Profile Avatar"></a>
-                            <a href="#"><span>ahmed shawky</span></a>
+                            <a href="#"><span>{{ auth()->user()->first_name }} {{ auth()->user()->last_name }}</span></a>
                         </div>
                         <div class="pages">
                             <ul>
@@ -97,17 +97,23 @@
                                 <li>
                                     <a href="#"><i class="fas fa-user-md fa-fw"></i> Advices</a>
                                 </li>
+                                <li>
+                                    <a href="#" onclick="event.preventDefault();
+                                             document.getElementById('logout-form').submit();">
+                                        <i class="fas fa-power-off fa-fw"></i>
+                                        Logout
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                                        @csrf
+                                    </form>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fas fa-language fa-fw"></i> عربي</a>
+                                </li>
                             </ul>
                         </div>
                         <div class="footer">
-                            <ul>
-                                <li>
-                                    <a href="#">عربى</a>
-                                </li>|
-                                <li>
-                                    <a href="#">Logout</a>
-                                </li>
-                            </ul>
                             <div class="copyright">
                                 &copy; Copyright HaBsawy | All Right Reserved
                             </div>
